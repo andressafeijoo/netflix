@@ -1,0 +1,132 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.logo{
+    color: #E50914;
+    margin-left: 50px;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center; /* alinha os itens da barra menos a logo*/
+    justify-content: space-between; /* espaço entre os itens da barra */
+    margin-right: 400px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+header .titulo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #ffff;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+header nav a:hover{
+    color: #aaa;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 20px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/bridgertonposter.jpg');
+
+    height: 470px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-left: 8%;
+    margin-right: 500px;
+    margin-top: 30px;
+}
+
+.filme-principal .descricao1{
+    margin-bottom: 50px;
+    margin-left: 9%;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20px;
+    margin-left: 6%;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-left: 5%;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/* WRAPPER * ENVELOPE */
+
+.container{
+    margin-left: 20px;
+
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
